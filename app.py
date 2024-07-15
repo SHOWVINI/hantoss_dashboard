@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Title of the dashboard
-st.title('Sample Streamlit Dashboard')
+st.title('Sample Streamlit Dashboard!!')
 
 # Sidebar for user input
 st.sidebar.header('User Input Parameters')
@@ -35,3 +35,7 @@ map_data = pd.DataFrame(
     np.random.randn(100, 2) / [50, 50] + [37.76, -122.4],
     columns=['lat', 'lon'])
 st.map(map_data)
+
+# titanic CSV 파일로 로컬에서 테스트 해보기
+titanic = pd.read_csv("./data/titanic.csv")
+st.write(titanic)
